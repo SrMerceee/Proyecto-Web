@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse | Administrador</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+</head>
+<body>
+    <h1>Registrarse</h1>
+    <form action="/registrar_administrador" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        
+        <label for="rol">Rol:</label>
+        <select id="rol" name="rol" required>
+            <option value="1">Administrador</option>
+            <option value="2">Usuario</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+
+    <script src="js/validacion.js"></script>
+    
+</body>
+</html>

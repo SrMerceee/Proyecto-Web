@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encargo de zapatillas</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+    
+</head>
+<!------------------------------------------------------------------------------------------------------------------->
+<body>
+      <nav class="back-link">
+        <a href="index.html"> Inicio</a>
+    </nav>
+    <div id="listaEncargos" class="grid-container"></div>
+
+<!------------------------------------------------------------------------------------------------------------------->
+<!--OPCIONES QUE MUESTRAMOS EN EL FORMULARIO-->
+
+    <h2>Formulario de encargo de zapatilla</h2>
+    <form id="uploadForm" action="/subir_imagen" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre del modeo de al zapatilla:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="descripcion">Descripcion:</label>
+        <input type="text" id="descripcion" name="descripcion" required><br><br>
+
+        <label for="talla">Talla:</label>
+        <select id="talla" name="talla" required>
+             <option value="" disabled selected>Seleccione una talla</option>
+             <option value="38">34</option>
+             <option value="38">35</option>
+             <option value="38">36</option>
+             <option value="38">37</option>
+             <option value="38">38</option>
+             <option value="39">39</option>
+             <option value="40">40</option>
+             <option value="41">41</option>
+             <option value="42">42</option>
+             <option value="43">43</option>
+             <option value="44">44</option>
+             <option value="45">45</option>
+        </select>
+
+        <br><br>
+        <label for="imagen">Seleccione foto de referencia:</label>
+        <input type="file" id="imagen" name="imagen" required><br><br>
+
+        <br><br>
+        <input type="submit" value="Realizar Encargo">
+    </form>
+<!------------------------------------------------------------------------------------------------------------------->
+    
+    <script src="js/cargarImagenes.js"></script>
+</body>
+</html>
